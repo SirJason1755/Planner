@@ -1,0 +1,24 @@
+@model Wedding
+<br>
+<H1>Add A Wedding</H1>
+<br>
+<form action="create" method= "POST">
+    <div class= "form-group">
+        <label for="WedderOne">WedderOne</label>
+        <input asp-for="WedderOne">
+    </div>
+    <div class= "form-group">
+        <label for="WedderTwo">WedderTwo</label>
+        <input asp-for="WedderTwo">
+    </div>
+    <div class= "form-group">
+        <label for="Date">Date</label>
+        <input asp-for="Date">
+    </div>
+    <div class= "form-group">
+        <label for="Address">Wedding Adress</label>
+        <input asp-for="Address">
+    </div>
+    <input type="hidden" asp-for="UserID" value="@ViewBag.UserID">
+    <input type="submit" value="Add" class="btn btn-primary">
+</form>

@@ -1,0 +1,13 @@
+<h1>@ViewBag.Wedding.WedderOne</h1>
+<h1>@ViewBag.Wedding.WedderTwo</h1>
+<h1>@ViewBag.Wedding.Address</h1>
+<h1>@ViewBag.Wedding.Date</h1>
+<br>
+<h1>Guest List</h1>
+@foreach(var g in @ViewBag.Wedding.GuestList)
+{
+
+@* <h1>@g.Attendee.FirstName @g.Attendee.LastName</h1> *@
+<h1>@g.Attendee.FirstName</h1>
+
+}
